@@ -22,7 +22,7 @@ const rules = {
 };
 ```
 
-### run program
+### getting started
 
 1. first you need to create a symlink using npm (or any nodejs package manager)
 

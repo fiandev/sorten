@@ -5,8 +5,9 @@ on:
     branches:
       - master
     paths:
-      - 'index.ts'
-      - 'bin/**'
+      - "index.ts"
+      - "bin/**"
+      - .github/workflows/publish-npm-package.yml
 
 jobs:
   build:
@@ -20,7 +21,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn'
+          cache: "yarn"
 
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
@@ -44,8 +45,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn'
-          registry-url: 'https://registry.npmjs.org'
+          cache: "yarn"
+          registry-url: "https://registry.npmjs.org"
 
       - name: Install Dependencies
         run: yarn install --frozen-lockfile

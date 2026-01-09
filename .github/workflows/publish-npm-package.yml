@@ -30,7 +30,7 @@ jobs:
         run: npm run typecheck
 
       - name: Build
-        run: npm build
+        run: npm run build
 
   release:
     needs: build

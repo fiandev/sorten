@@ -6,15 +6,26 @@
     "sorten": "./bin/sorten",
     "sortdl": "./bin/sorten"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "commander": "^14.0.2",
     "fast-glob": "^3.3.2",
-    "fs-extra": "^11.2.0"
+    "fs-extra": "^11.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "semantic-release": "^23.0.0",
+    "typescript": "^5.0.0"
   }
 }

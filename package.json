@@ -16,16 +16,18 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/fs-extra": "^11.0.4",
+    "audit": "^0.0.6",
     "commander": "^14.0.2",
     "fast-glob": "^3.3.2",
+    "fix": "^0.0.3",
     "fs-extra": "^11.3.3"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "semantic-release": "^23.0.0",
+    "semantic-release": "^25.0.2",
     "typescript": "^5.0.0"
   }
 }

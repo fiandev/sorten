@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'index.ts'
+      - 'bin/**'
 
 jobs:
   build:
@@ -16,7 +19,7 @@ jobs:
       - name: Set Node.js Version
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: 'yarn'
 
       - name: Install Dependencies
@@ -40,7 +43,7 @@ jobs:
       - name: Set Node.js Version
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: 'yarn'
           registry-url: 'https://registry.npmjs.org'
 

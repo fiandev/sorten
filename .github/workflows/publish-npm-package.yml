@@ -44,15 +44,14 @@ jobs:
       - name: Set Node.js Version
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: "npm"
           registry-url: "https://registry.npmjs.org"
 
       - name: Install Dependencies
         run: npm install
 
-      - name: Release
-        run: npm run semantic-release
+      - name: Publish
+        run: npm publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

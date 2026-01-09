@@ -11,7 +11,6 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -27,7 +26,6 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "semantic-release": "^25.0.2",
     "typescript": "^5.0.0"
   }
 }
